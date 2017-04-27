@@ -87,6 +87,7 @@ AFRAME.registerComponent('aabb-collider', {
                       (self.elMin.z <= elMax.z && self.elMax.z >= elMin.z);
         if (!intersected) { return; }
         collisions.push(el);
+        console.log(collisions);
       }
 
       function handleHit (hitEl) {

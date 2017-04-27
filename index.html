@@ -14,9 +14,9 @@
 <body>
   <a-scene>
      <a-assets>
-        <a-mixin id="sphere" geometry="primitive: sphere" radius="2" material="color: blue"></a-mixin>
-        <a-mixin id="sphere-collided" geometry="primitive: sphere" radius="2" material="color: #F2E646;"></a-mixin>
-        <a-mixin id="sphere-grabbed" geometry="primitive: sphere" radius="2" material="color: #F2E646;"></a-mixin>
+        <a-mixin id="sphere" geometry="primitive: sphere" material="color: blue"></a-mixin>
+        <a-mixin id="sphere-collided" geometry="primitive: sphere" radius="0.3" material="color: #F2E646;"></a-mixin>
+        <a-mixin id="sphere-grabbed" geometry="primitive: sphere" radius="0.3" material="color: #F2E646;"></a-mixin>
   </a-assets>
      <!-- Controlli vive -->
     <a-entity vive-controls="hand: left" aabb-collider="objects: .sphere" grab></a-entity>
@@ -36,11 +36,14 @@
     <!-- soffitto -->
     <a-box position="0.5 10.5 -3" rotation="0 0 90" color="#757575" depth="21" height="20" width="1"></a-box>
 
-    <a-entity position="0 0 -2">
-      <a-entity class=".sphere" mixin="sphere" position="2.5 1.9 0" radius="2"></a-entity>
-      <a-entity class=".sphere" mixin="sphere" position="0 1.9 0" radius="2"></a-entity>
-      <a-entity class=".sphere" mixin="sphere" position="-2.5 1.9 0" radius="2"></a-entity>
+    <a-entity layout="type: line; margin: 8" position="0 0 -2">
+      <a-entity class=".sphere" mixin="sphere" position="2.5 1.9 0" ></a-entity>
+      <a-entity class=".sphere" mixin="sphere" position="0 1.9 0" ></a-entity>
+      <a-entity class=".sphere" mixin="sphere" position="-2.5 1.9 0" ></a-entity>
+      <a-entity class=".sphere" mixin="sphere" position="2.5 1.9 2.5" ></a-entity>
+      <a-entity class=".sphere" mixin="sphere" position="-2.5 1.9 2.5" ></a-entity>
     </a-entity>
+    
     <!-- piano-->
     <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#F9A825"></a-plane>
     <a-sky color="#0000ff"></a-sky>
