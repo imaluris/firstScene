@@ -68,6 +68,7 @@ AFRAME.registerComponent('aabb-collider', {
       // Store new collisions
       this.collisions = collisions;
       
+      
 
       // AABB collision detection
       function intersect (el) {
