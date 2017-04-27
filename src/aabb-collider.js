@@ -38,7 +38,7 @@ AFRAME.registerComponent('aabb-collider', {
     }
     // Convert from NodeList to Array
     this.els = Array.prototype.slice.call(objectEls);
-    console.log(data);
+    
   },
 
   tick: (function () {
@@ -88,7 +88,7 @@ AFRAME.registerComponent('aabb-collider', {
                       (self.elMin.z <= elMax.z && self.elMax.z >= elMin.z);
         if (!intersected) { return; }
         collisions.push(el);
-        console.log(mesh);
+        
       }
 
       function handleHit (hitEl) {
@@ -101,7 +101,7 @@ AFRAME.registerComponent('aabb-collider', {
         boundingBox.setFromObject(mesh);
         self.elMin.copy(boundingBox.min);
         self.elMax.copy(boundingBox.max);
-        console.log(boundingBox);
+        
       }
     };
   })()
