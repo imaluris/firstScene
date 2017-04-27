@@ -29,8 +29,8 @@
         <a-mixin id="torus-grabbed" geometry="primitive:torus; arc: 360; radius: 0.6; radius-tabular: 0.01;" material="color: yellow;"></a-mixin>
     </a-assets>
     <!-- Controlli vive -->
-    <a-entity hand-controls="left" aabb-collider="objects: .sphere, .cube, .cylinder" grab teleport-controls></a-entity>
-    <a-entity hand-controls="right" aabb-collider="objects: .sphere, .cube, .cylinder" grab teleport-controls></a-entity>
+    <a-entity hand-controls="left" aabb-collider="objects: .sphere, .cube, .cylinder, .torus" grab teleport-controls></a-entity>
+    <a-entity hand-controls="right" aabb-collider="objects: .sphere, .cube, .cylinder, .torus" grab teleport-controls></a-entity>
    
 
     
@@ -59,16 +59,16 @@
       <a-entity class="cube" mixin="cube" position="0.5 1.9 2"></a-entity>
     </a-entity>
 
-    <a-entity layout="type: line; margin: 1" position="-2 -0.5 -2" rotation="0 90 0">
-      <a-entity class="cylinder" mixin="cylinder" position="1 1.9 0"></a-entity>
+    <a-entity layout="type: line; margin: 1" position="-2 -0.5 -2">
+      <a-entity class="cylinder" mixin="cylinder" position="0 1.9 1"></a-entity>
       <a-entity class="cylinder" mixin="cylinder" position="0 1.9 0"></a-entity>
-      <a-entity class="cylinder" mixin="cylinder" position="-1 1.9 0"></a-entity>
+      <a-entity class="cylinder" mixin="cylinder" position="0 1.9 -1"></a-entity>
     </a-entity>
 
-    <a-entity layout="type: line; margin: 3" position="-2 -0.5 -2" rotation="0 90 0">
-      <a-entity class="torus" mixin="torus" position="2 2 4"></a-entity>
-      <a-entity class="torus" mixin="torus" position="0 2 4"></a-entity>
-      <a-entity class="torus" mixin="torus" position="-2 2 4"></a-entity>
+    <a-entity layout="type: line; margin: 2" position="-2 -0.5 -2">
+      <a-entity class="torus" mixin="torus" position="4 2 1.5"></a-entity>
+      <a-entity class="torus" mixin="torus" position="4 2 0"></a-entity>
+      <a-entity class="torus" mixin="torus" position="4 2 -1.5"></a-entity>
     </a-entity>
 
     <!-- piano-->
