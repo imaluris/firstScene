@@ -28,12 +28,14 @@
         <a-mixin id="torus-collided" geometry="primitive:torus; arc: 360; radius: 0.6; radius-tabular: 0.01;" material="color: white;"></a-mixin>
         <a-mixin id="torus-grabbed" geometry="primitive:torus; arc: 360; radius: 0.6; radius-tabular: 0.01;" material="color: yellow;"></a-mixin>
     </a-assets>
-    <!-- Controlli vive -->
-    <a-entity hand-controls="left" aabb-collider="objects: .sphere, .cube, .cylinder, .torus" grab teleport-controls></a-entity>
-    <a-entity hand-controls="right" aabb-collider="objects: .sphere, .cube, .cylinder, .torus" grab teleport-controls></a-entity>
-   
+    
+    <!-- Controlli vive + camera -->
+    <a-entity camera look-controls wasd-controls position="-0.5 1.6 -2">
+      <a-entity hand-controls="left" aabb-collider="objects: .sphere, .cube, .cylinder, .torus" grab teleport-controls></a-entity>
+      <a-entity hand-controls="right" aabb-collider="objects: .sphere, .cube, .cylinder, .torus" grab teleport-controls></a-entity>
+   </a-entity>
 
-   <a-entity camera look-controls wasd-controls position="-0.5 1.6 -2"></a-entity>
+   
 
       <!-- Lato sinistro -->
       <a-box position="10 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
