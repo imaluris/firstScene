@@ -9,18 +9,19 @@
   <script src="src/aabb-collider.js"></script>
   <script src="src/grab.js"></script>
   <script src="src/aframe-teleport-controls.min.js"></script>
+  <!-- Fisica da provare -->
   <script src="src/aframe-physics-system.min.js"></script>
 </head>
 
 <body>
-  <a-scene physics="friction: 0.1; restitution: 0.5">
+  <a-scene>
     <a-assets>
         <a-mixin id="sphere" geometry="primitive: sphere; radius: 0.2;" material="color: blue"></a-mixin>
         <a-mixin id="sphere-collided" geometry="primitive: sphere" material="color: white;"></a-mixin>
         <a-mixin id="sphere-grabbed" geometry="primitive: sphere" material="color: yellow;"></a-mixin>
-        <a-mixin id="cube" geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30" material="color: purple" dynamic-body="shape: box; mass: 2"></a-mixin>
-        <a-mixin id="cube-collided" geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30" material="color: white" dynamic-body="shape: box; mass: 2"></a-mixin>
-        <a-mixin id="cube-grabbed" geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30" material="color: yellow" dynamic-body="shape: box; mass: 2"></a-mixin>
+        <a-mixin id="cube" geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30" material="color: purple"></a-mixin>
+        <a-mixin id="cube-collided" geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30" material="color: white"></a-mixin>
+        <a-mixin id="cube-grabbed" geometry="primitive: box; height: 0.30; width: 0.30; depth: 0.30" material="color: yellow"></a-mixin>
         <a-mixin id="cylinder" geometry="primitive: cylinder; radius: 0.2; height:1;" material="color: green"></a-mixin>
         <a-mixin id="cylinder-collided" geometry="primitive:cylinder; radius: 0.2; height:1;" material="color: white;"></a-mixin>
         <a-mixin id="cylinder-grabbed" geometry="primitive:cylinder; radius: 0.2; height:1;" material="color: yellow;"></a-mixin>
