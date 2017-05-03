@@ -39,74 +39,74 @@
    
 
       <!-- Lato sinistro -->
-      <a-box position="10 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
+      <a-box static-body position="10 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
       <!-- Lato destro -->
-      <a-box position="-9 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
+      <a-box static-body position="-9 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
       <!-- fondo -->
-      <a-box position="0.5 5 -13" rotation="0 90 0" color="#757575" depth="20" height="10" width="1"></a-box>
+      <a-box static-body position="0.5 5 -13" rotation="0 90 0" color="#757575" depth="20" height="10" width="1"></a-box>
       <!-- ingresso sinistro -->
-      <a-box position="-6 5 7" rotation="0 90 0" color="#757575" depth="7" height="10" width="1"></a-box>
+      <a-box static-body position="-6 5 7" rotation="0 90 0" color="#757575" depth="7" height="10" width="1"></a-box>
       <!-- ingresso destro -->
-      <a-box position="7 5 7" rotation="0 90 0" color="#757575" depth="7" height="10" width="1"></a-box>
+      <a-box static-body position="7 5 7" rotation="0 90 0" color="#757575" depth="7" height="10" width="1"></a-box>
       <!-- soffitto -->
-      <a-box position="0.5 10.5 -3" rotation="0 0 90" color="#757575" depth="21" height="20" width="1"></a-box>
+      <a-box static-body position="0.5 10.5 -3" rotation="0 0 90" color="#757575" depth="21" height="20" width="1"></a-box>
     
 
     <a-entity rotation="0 180 0" position="1.2 -0.5 30">
       <!-- Lato sinistro -->
-      <a-box position="10 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
+      <a-box static-body position="10 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
       <!-- Lato destro -->
-      <a-box position="-9 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
+      <a-box static-body position="-9 5 -3" rotation="0 0 0" color="#757575" depth="20" height="10" width="1"></a-box>
       <!-- fondo -->
-      <a-box position="0.5 5 -13" rotation="0 90 0" color="#757575" depth="20" height="10" width="1"></a-box>
+      <a-box static-body position="0.5 5 -13" rotation="0 90 0" color="#757575" depth="20" height="10" width="1"></a-box>
       <!-- ingresso sinistro -->
-      <a-box position="-6 5 7" rotation="0 90 0" color="#757575" depth="7" height="10" width="1"></a-box>
+      <a-box static-body position="-6 5 7" rotation="0 90 0" color="#757575" depth="7" height="10" width="1"></a-box>
       <!-- ingresso destro -->
-      <a-box position="7 5 7" rotation="0 90 0" color="#757575" depth="7" height="10" width="1"></a-box>
+      <a-box static-body position="7 5 7" rotation="0 90 0" color="#757575" depth="7" height="10" width="1"></a-box>
       <!-- soffitto -->
-      <a-box position="0.5 10.5 -3" rotation="0 0 90" color="#757575" depth="21" height="20" width="1"></a-box>
+      <a-box static-body position="0.5 10.5 -3" rotation="0 0 90" color="#757575" depth="21" height="20" width="1"></a-box>
     </a-entity>
 
     <a-entity layout="type: line; margin: 1" position="-2 -0.5 -2">
-      <a-entity dynamic-body class="sphere" mixin="sphere" position="2.5 1.9 -2"></a-entity>
-      <a-entity dynamic-body class="sphere" mixin="sphere" position="1.5 1.9 -2"></a-entity>
-      <a-entity dynamic-body class="sphere" mixin="sphere" position="0.5 1.9 -2"></a-entity>
+      <a-entity dynamic-body class="sphere" mixin="sphere" position="2.5 0.5 -2"></a-entity>
+      <a-entity dynamic-body class="sphere" mixin="sphere" position="1.5 0.5 -2"></a-entity>
+      <a-entity dynamic-body class="sphere" mixin="sphere" position="0.5 0.5 -2"></a-entity>
     </a-entity>
 
     <a-entity layout="type: line; margin: 1" position="-2 -0.5 -2">
-      <a-entity dynamic-body class="cube" mixin="cube" position="2.5 1.9 2"></a-entity>
-      <a-entity dynamic-body class="cube" mixin="cube" position="1.5 1.9 2"></a-entity>
-      <a-entity dynamic-body class="cube" mixin="cube" position="0.5 1.9 2"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="2.5 0.5 2"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="1.5 0.5 2"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="0.5 0.5 2"></a-entity>
     </a-entity>
 
     <a-entity layout="type: line; margin: 1" position="-2 -0.5 -2">
-      <a-entity dynamic-body class="cylinder" mixin="cylinder" position="0 1.9 1"></a-entity>
-      <a-entity dynamic-body class="cylinder" mixin="cylinder" position="0 1.9 0"></a-entity>
-      <a-entity dynamic-body class="cylinder" mixin="cylinder" position="0 1.9 -1"></a-entity>
+      <a-entity dynamic-body class="cylinder" mixin="cylinder" position="0 0.5 1"></a-entity>
+      <a-entity dynamic-body class="cylinder" mixin="cylinder" position="0 0.5 0"></a-entity>
+      <a-entity dynamic-body class="cylinder" mixin="cylinder" position="0 0.5 -1"></a-entity>
     </a-entity>
 
     <a-entity layout="type: line; margin: 2" position="-2 -0.5 -2">
-      <a-entity dynamic-body class="torus" mixin="torus" position="4 2 1.5"></a-entity>
-      <a-entity dynamic-body class="torus" mixin="torus" position="4 2 0"></a-entity>
-      <a-entity dynamic-body class="torus" mixin="torus" position="4 2 -1.5"></a-entity>
+      <a-entity dynamic-body class="torus" mixin="torus" position="4 0.5 1.5"></a-entity>
+      <a-entity dynamic-body class="torus" mixin="torus" position="4 0.5 0"></a-entity>
+      <a-entity dynamic-body class="torus" mixin="torus" position="4 0.5 -1.5"></a-entity>
     </a-entity>
 
     <a-entity layout="type: line; margin: 1" position="-0.5 -0.5 34">
-      <a-entity dynamic-body class="cube" mixin="cube" position="2.5 1.9 34"></a-entity>
-      <a-entity dynamic-body class="cube" mixin="cube" position="1.5 1.9 34"></a-entity>
-      <a-entity dynamic-body class="cube" mixin="cube" position="0.5 1.9 34"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="2.5 0.5 34"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="1.5 0.5 34"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="0.5 0.5 34"></a-entity>
     </a-entity>
 
     <a-entity layout="type: line; margin: 1" position="-0.5 -0.5 32">
-      <a-entity dynamic-body class="cube" mixin="cube" position="2.5 1.9 32"></a-entity>
-      <a-entity dynamic-body class="cube" mixin="cube" position="1.5 1.9 32"></a-entity>
-      <a-entity dynamic-body class="cube" mixin="cube" position="0.5 1.9 32"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="2.5 0.5 32"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="1.5 0.5 32"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="0.5 0.5 32"></a-entity>
     </a-entity>
 
     <a-entity layout="type: line; margin: 1" position="-0.5 -0.5 30">
-      <a-entity dynamic-body class="cube" mixin="cube" position="2.5 1.9 30"></a-entity>
-      <a-entity dynamic-body class="cube" mixin="cube" position="1.5 1.9 30"></a-entity>
-      <a-entity dynamic-body class="cube" mixin="cube" position="0.5 1.9 30"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="2.5 0.5 30"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="1.5 0.5 30"></a-entity>
+      <a-entity dynamic-body class="cube" mixin="cube" position="0.5 0.5 30"></a-entity>
     </a-entity>
 
     <!-- piano-->
